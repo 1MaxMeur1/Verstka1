@@ -1,0 +1,36 @@
+$title: #363838;
+$default: #5A5A5A;
+
+%title-font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+.info-email {
+    font-weight: 600;
+    font-style: 14px;
+    color: $title;
+    @extend %title-font;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url('../images/footer/mail.svg');
+        left: 0;
+        top: 3px;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+    }
+}
