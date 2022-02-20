@@ -18,6 +18,9 @@
         padding: 0;
         cursor: pointer;
     }
+    &__btn-menu {
+        display: none;
+    }
 }
 
 .logo {
@@ -259,6 +262,7 @@
 
     &__list {
         display: flex;
+        overflow-x: auto;
     }
 
     &__link {
@@ -266,10 +270,14 @@
         color: $default;
     }
 
+    &__item {
+        position: relative;
+        padding-right: 8px;
+    }
+
     &__item::after {
         content: '/';
-        margin-left: -4px;
-        margin-right: 4px;
+        position: absolute;
     }
 
     &__item:last-child::after {
@@ -287,7 +295,7 @@
             background-image: url('../images/top__slider/slider-bg.jpg');
             position: absolute;
             width: 100%;
-            height: 722px;
+            height: 100%;
             top: 20px;
             z-index: -1;
         }
@@ -1438,3 +1446,5 @@
         color: #a1a1a1;
     }
 }
+
+@import 'media';
