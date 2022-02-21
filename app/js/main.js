@@ -28,6 +28,61 @@ $(function() {
         slidesToScroll: 10,
         dots: true,
         arrows: false,
+        responsive: [
+            {
+              breakpoint: 1700,
+              settings: {
+                slidesToShow: 8,
+                slidesToScroll: 8,
+              }
+            },
+            {
+              breakpoint: 1520,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6
+              }
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+              }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+                }
+              },
+            {
+              breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 600,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    dots: false,
+                    arrows: true
+                  }
+              },
+              {
+                breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: true
+                  }
+              }
+          ]
     });
 
     $('.article__slider-box').slick({

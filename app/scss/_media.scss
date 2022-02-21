@@ -1,9 +1,23 @@
+@media(max-width: 1500px) {
+    .partners {
+        &__item {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
 @media (max-width: 1366px) {
     .collection {
         grid-template-columns: repeat(3, 1fr);
         &__image {
             width: 100%;
             margin-top: 1vw;
+        }
+    }
+    .partners {
+        &__item {
+            height: 150px;
+            width: 150px;
         }
     }
 }
@@ -20,13 +34,46 @@
     }
 }
 
+@media(max-width: 1050px) {
+    .blog {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__items {
+            max-width: 100%;
+        }
+        &__item-img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+    }
+    .article {
+        &__slider-img {
+            width: 100%;
+        }
+    }
+    .aside {
+        width: 100%;
+        order: -1;
+        margin-left: 0;
+    }
+    .blog-one {
+        & .aside {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 1000px) {
     .footer {
         &__info {
             width: 380px;
         }
     }
-    
+    .partners {
+        padding: 30px 0 30px;
+    }
 }
 
 @media(max-width: 910px) {
@@ -44,6 +91,11 @@
             outline: none;
         }
     }
+    .gallery {
+        &__buttons {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -57,6 +109,14 @@
     .work {
         &__item {
             min-width: 270px;
+        }
+    }
+    .about {
+        &__text {
+            padding-left: 0;
+        }
+        &__content {
+            padding: 40px 0 40px;
         }
     }
 }
@@ -105,6 +165,39 @@
         }
         &__slider-img {
             height: 540px;
+        }
+    }
+    .inspiration {
+        padding: 40px 0 10px;
+        &__img {
+            display: none;
+        }
+        &__text {
+            margin-bottom: 62px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 43px;
+        }
+    }
+    .partners {
+        &__item {
+            height: 130px;
+            width: 130px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-us {
+        &__content {
+            margin-left: 0;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
+        &__info {
+            margin-bottom: 30px;
         }
     }
 }
@@ -183,6 +276,23 @@
             line-height: 35px;
         }
     }
+    .about {
+        &__prev {
+            padding: 120px 0;
+        }
+        &__prev-title {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .partners {
+        &__item {
+            height: 110px;
+            width: 110px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -201,6 +311,31 @@
         &__title {
             font-size: 35px;
             line-height: 60px;
+        }
+    }
+    .about {
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .gallery {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .maps {
+        iframe {
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .partners {
+        &__item {
+            height: 90px;
+            width: 90px;
         }
     }
 }
@@ -233,6 +368,26 @@
     }
     .gallery {
         padding: 0px 0 50px;
+    }
+    .contact-slider {
+        position: relative;
+    }
+
+    .slick-arrow {
+        z-index: 2;
+        border: none;
+        background-color: yellow;
+        outline: none;
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 30%;
+    }
+    .slick-next {
+        position: absolute;
+        right: 0;
+        top: 30%;
     }
 }
 
@@ -323,6 +478,32 @@
             margin-bottom: 30px;
         }
     }
+    .about {
+        &__prev {
+            padding: 110px 0;
+        }
+        &__prev-title {
+            font-size: 45px;
+        }
+    }
+    .partners {
+        &__item {
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .contact-us {
+        &__input {
+            width: 100%;
+        }
+    }
+    .blog-one {
+        &__link-article {
+            span {
+                display: none;
+            }
+        }
+    }
 }
 @media (max-width: 500px) {
     .top {
@@ -350,6 +531,76 @@
             line-height: 26px;
         }
     }
+    .about {
+        &__title {
+            font-size: 24px;
+            line-height: 50px;
+        }
+    }
+    .partners {
+        &__item {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    .contact-slider {
+        &__img {
+            width: 100%;
+        }
+        &__link {
+            padding-right: 0;
+        }
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 11%;
+    }
+    .slick-next {
+        position: absolute;
+        right: 0;
+        top: 60%;
+    }
+    .blog {
+        &__item-title {
+            font-size: 18px;
+        }
+        &__blockquote {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .blog-one {
+        &__form-input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-us {
+        &__social-item {
+            padding-right: 30px;
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .blog-one {
+        &__comments-item {
+            flex-wrap: wrap;
+        }
+        &__comments-name,
+        &__comments-date {
+            margin-left: 80px;
+        }
+        &__comments-info {
+            margin-top: -56px;
+        }
+        &__comments-reply {
+            margin-left: 0;
+        }
+    }
 }
 
 @media(max-width: 375px) {
@@ -363,9 +614,23 @@
         }
     }
     .work {
-        &__item-title {
+        &__item-title { 
             font-size: 17px;
             line-height: 30px;
+        }
+    }
+    .partners {
+        &__item {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+@media(max-width: 331px) {
+    .inspiration {
+        &__text {
+            margin-bottom: 29px;
         }
     }
 }
